@@ -1,40 +1,101 @@
+const board_game = document.getElementsByClassName('board_game');
+const card_game = document.getElementsByClassName('Card_game')
+
+let card_name;
+
+let id;
+let isFliped;
+let Click;
+
+
+let stop;
+let start;
+let pause;
+
+//////////////////////////////////////////////for CARD///////////////////////////////////////
 class Card{
-  constructor(card_name,card_id){
-      this.name = card_name;
-      this.id = card_id;
+  constructor(){
+      this.card = false;
+      this.isFliped = false;
+      this.card_name = card_name;
   }
   
 }
 
-// const canvas = document.getElementById("myCanvas");
-// const ctx = canvas.getContext("2d");
-// const img = new Image();
-// const img1 = new Image();
+function setVariables(){
+  time;
+  Imgcard = [];
+}
 
+function setCard(){
+  for(let i = 0; i <= 100; i ++){
+    Imgcard[i] = '${i}.jpg';
+  }
 
-// img.width = 500;
-// img.height = 500;
-// img.src = "0_BACK.jpg";
-// img.onload = function() {
-//   ctx.drawImage(img, 0, 0);
-// };
+}
 
-// img1.src = "1_cake.jpg";
-// img1.width = 500;
-// img1.height = 500;
-// img1.onload = function(){
-//     ctx.drawImage(img1, 50, 500);
-// };
+function createCard(i,j){
+  for(let i = 0; i <= Imgcard.length; i++){
+    for(let j = 0; i <= Imgcard.length; j++){
 
-let isFliped = false;
+    }
+  }
+}
+
+function suffleCard(Imgcard){
+  
+}
 
 // When the card is covered
 function back(){
 isFliped = false;
 img.src = "0_BACK.jpg";
+console.log(img.src);
 }
 
 // When open the card 
-function open(){
-isFliped = true;
+function open(i,j){
+  if(card.isFliped == false){
+    isFliped = true;//(1)
+    document.addEventListener("click", open);
+  }
 } 
+
+////////////////////////////////For BOARD///////////////////////////////////////////////////
+
+
+
+class Board_game{
+    constructor(row, cow){
+        this.row = row;// Row
+        this.col = col;// Column
+        this.board = [];
+        
+    }
+    
+}
+
+//////////////////////////Game Play////////////////////////////////////////////////////////
+function setTime(){}
+
+function setGameDifficult(){
+  const level = document.getElementsByClassName('level')
+  switch(level.case){
+    case 'easy':
+      //
+      break;
+    case 'medium':
+      //
+      break;
+    case 'hard':
+      //
+      break;
+    case 'Challenge':
+      //
+      break;
+    
+    default:
+      break;
+  }
+}
+

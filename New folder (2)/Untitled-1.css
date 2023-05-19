@@ -1,9 +1,40 @@
-h1{
+.begin {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttons-container {
+    background: rgba(146, 50, 50, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .Start{
+    color: blue;
+  }
+  .begin{}
+
+  h1{
+    text-align: left;
+    color: black;
+    font-style: Georgia;
 }
 
 h2{
     text-align: center;
+}
+
+.Board_game{
+    width: 500px;
+    height: 500px;
+
+
 }
 
 .Card_game{
